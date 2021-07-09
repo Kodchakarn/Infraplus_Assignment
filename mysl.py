@@ -13,6 +13,7 @@ df_null = pd.concat([df_null_1, df_null_2]).drop_duplicates()
 df_null = df_null.reset_index(drop=True)
 
 st.title("Assignment Infraplus")
+st.markdown("Please select checkbox to displays data with missing values or latitude or longitude outside of Thailand's boundaries.")
 if st.checkbox('Show dataframe'):
     df_null
 
