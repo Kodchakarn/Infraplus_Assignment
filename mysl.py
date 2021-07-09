@@ -15,6 +15,7 @@ df_null = df_null.reset_index(drop=True)
 st.title("Assignment Infraplus")
 st.markdown("Please select checkbox to displays data with missing values or latitude or longitude outside of Thailand's boundaries.")
 if st.checkbox('Show dataframe'):
+    st.write("There are {} data".format(df_null.shape[0]))
     df_null
 
 # set geometry
